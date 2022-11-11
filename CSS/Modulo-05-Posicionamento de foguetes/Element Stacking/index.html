@@ -1,0 +1,44 @@
+<!-- 
+    Position 
+
+    - Element Stacking
+    É o empilhamento de elementos. Podemos usar o z-index para determinar a ordem da posição do elemento. Quanto maior o z-index, mais "acima" vai aparecer o elemento.
+
+
+-->
+
+<style>
+    .box {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 8px;
+    }
+
+    .box1 {
+        background-color: red;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        z-index: 3;
+    }
+
+    .box2 {
+        background-color: green;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 2;
+    }
+
+    .box3 {
+        background-color: blue;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        z-index: 5;
+    }
+</style>
+
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>

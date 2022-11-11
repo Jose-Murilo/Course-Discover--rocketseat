@@ -1,0 +1,56 @@
+<style>
+    html {
+        font-size: 32px;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 1fr 400px;
+        grid-template-rows: 100px 1fr 100px;
+        grid-template-areas: 
+            "header header"
+            "main aside"
+            "footer footer"
+        ;
+    }
+
+    header {
+        background-color: blue;
+        grid-area: header;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 8px;
+    }
+
+    main {
+        background-color: red;
+        grid-area: main;
+    }
+
+    aside {
+        background-color: yellow;
+        grid-area: aside;
+    }
+
+    footer {
+        background-color: #333;
+        grid-area: footer;
+    }
+</style>
+
+<div class="container">
+    <header>
+        <div>header</div>
+        <div>menu</div>
+    </header>
+    <main>main</main>
+    <aside>aside</aside>
+    <footer>footer</footer>
+</div>
