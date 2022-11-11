@@ -6,4 +6,8 @@ const sayMyName = (nome)  => {
     console.log(nome)
 }
 
+<<<<<<< HEAD
 sayMyName("Murilo")
+=======
+sayMyName("Murilo")
+>>>>>>> 7e651064276db4a024a762d55d000e4d0b5c8397
