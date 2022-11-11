@@ -7,4 +7,3 @@ const sayMyName = (nome)  => {
 }
 
 sayMyName("Murilo")
-sayMyName("Murilo")
