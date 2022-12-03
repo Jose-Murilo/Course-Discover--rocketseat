@@ -1,4 +1,4 @@
-// Manipulando conteúdo
+// Alterando estilos
 // Alterando estilos com style
 
 const body = document.querySelector('body')
