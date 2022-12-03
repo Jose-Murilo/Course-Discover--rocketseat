@@ -1,5 +1,5 @@
 // Manipulando conteúdo
-// innerText
+// innerHTML
 
 const element = document.querySelector('h1')
 
