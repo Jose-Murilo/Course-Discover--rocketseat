@@ -16,7 +16,8 @@ const pessoa = {
 // console.log(pessoa);
 
 
-// Renomeando propriedades
+// >>>>>> Renomeando propriedades <<<<<<
+
 // const { name:nomePessoa } = pessoa
 // const { age:idade } = pessoa
 
