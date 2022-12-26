@@ -14,11 +14,11 @@
     return (num1 / num2);
 }
 
-// export {sum, sub, mult, div}
+export {sum, sub, mult, div}
 
-export const operations = ({
+// export const operations = ({
     sum,
     sub,
     mult,
     div
-})
+// })
