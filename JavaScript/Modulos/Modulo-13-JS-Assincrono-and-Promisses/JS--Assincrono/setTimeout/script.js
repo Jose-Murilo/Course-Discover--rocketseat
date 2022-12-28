@@ -19,18 +19,18 @@
 
 
 // para parar a função setTimeout = clearTimeout
-    let timeout = setTimeout(() => {
-        console.log("Logo depois de 1s");
-    }, 1000)
+    // let timeout = setTimeout(() => {
+    //     console.log("Logo depois de 1s");
+    // }, 1000)
 
-clearTimeout(timeout)
+// clearTimeout(timeout)
 
 
 
 // para parar a função setInterval = clearInterval
 
-    let interval = setInterval(() => {
-        console.log("Logo depois de 1s");
-    }, 1000)
+    // let interval = setInterval(() => {
+    //     console.log("Logo depois de 1s");
+    // }, 1000)
 
-    clearInterval(interval)
+    // clearInterval(interval)
