@@ -28,18 +28,18 @@
 
 // >>>>>> Renomeando propriedades (Gerando um erro) <<<<<<
 
-let idade;
+// let idade;
 
-const pessoa2 = {
-    name: 'Murilo',
-    age: 16
-};
+// const pessoa2 = {
+//     name: 'Murilo',
+//     age: 16
+// };
 
-({ age:idade } = pessoa2)
-const { name:nomePessoa } = pessoa2
+// ({ age:idade } = pessoa2)
+// const { name:nomePessoa } = pessoa2
 
-console.log(nomePessoa);
-console.log(idade);
+// console.log(nomePessoa);
+// console.log(idade);
 
 // >>>>>> OBS <<<<<<
 
@@ -52,7 +52,7 @@ console.log(idade);
 // const fruits = ["banana", "pera", "uva"];
 
 // const [banana, pera] = fruits
-// // const [b, p] = fruits
+// const [b, p] = fruits
 // const [,b, p] = fruits
 
 // console.log(banana);
@@ -61,13 +61,15 @@ console.log(idade);
 // console.log(b);
 // console.log(p);
 
-// >>>>>> rest (operator) <<<<<<
+// >>>>>> rest and spread (operator) <<<<<<
 
 // const fruits = ["banana", "pera", "uva"];
 
 // const [banana, ...frutas] = fruits
 
-// console.log(banana, frutas);
+// console.log(banana, frutas); // rest operator
+
+// console.log(...frutas, 'maça'); // spread operator
 
 
 // >>>>>> Functions (desestruturação com obj) <<<<<<
@@ -93,6 +95,7 @@ console.log(idade);
     
 //     console.log(banana);
 //     console.log(rest);
+//     console.log(...rest); //spread operator
 // }
 
 // liquidificador(['banana', 'melancia', 'maça'])
