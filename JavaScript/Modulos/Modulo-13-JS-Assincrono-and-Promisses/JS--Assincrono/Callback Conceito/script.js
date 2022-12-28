@@ -2,9 +2,9 @@
 
 // Antes de entender o conceito de Callback no JavaScript, primeiro precisamos entender que funções aceitam qualquer tipo de dado como argumento, então no JavaScript é possível passar qualquer tipo de dado em uma função.
 
-function imprimirDado(dado) {
-	console.log(dado)
-}
+// function imprimirDado(dado) {
+// 	console.log(dado)
+// }
 
 // imprimirDado(1) 
 // imprimirDado('texto') 
@@ -14,11 +14,11 @@ function imprimirDado(dado) {
 
 function imprimirDado(dado) {
 	console.log('outras tarefas')
-	console.log(dado())
+	console.log(dado('olá'))
 }
 
-imprimirDado(function () {
-	return 'Olá Mundo'
+imprimirDado(function(msg) {
+	return msg
 })
 
 // Callback (chamar de volta) é uma função que é passada como argumento de outra função e depois de algum tempo ela é chamada de volta.
