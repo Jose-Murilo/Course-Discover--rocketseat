@@ -16,8 +16,8 @@
 // .then(res => console.log(res.data))
 
 // Mesmo processo só que com fetch
-fetch('https://api.github.com/users/Jose-Murilo')
-.then(response => response.json())
-.then(res => fetch(res.repos_url))
-.then(repos => repos.json())
-.then(result => console.log(result.data))
+// fetch('https://api.github.com/users/Jose-Murilo')
+// .then(response => response.json())
+// .then(res => fetch(res.repos_url))
+// .then(repos => repos.json())
+// .then(result => console.log(result))
