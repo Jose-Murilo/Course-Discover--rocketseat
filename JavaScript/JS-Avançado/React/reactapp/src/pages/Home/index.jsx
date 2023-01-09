@@ -17,11 +17,6 @@ export function Home() {
       <Card name = 'José' time = '10:57:47' />
       <Card name = 'Ana' time = '10:57:47' />
 
-      <p>{count}</p>
-      <button onClick={() => {
-        setCount(count + 1)
-      }
-      }>Contar</button>
     </div>
   )
 }
