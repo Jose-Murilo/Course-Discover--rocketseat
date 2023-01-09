@@ -1,6 +1,10 @@
 import './style.css'
+import React, { useStates } from 'react'
 
 import { Card } from '../../components/Card/index'
+
+const [count, setCount] = useStates()
+
 
 export function Home() {
   return (
@@ -12,6 +16,12 @@ export function Home() {
       <Card name='Murilo' time='10:55:25' />
       <Card name = 'José' time = '10:57:47' />
       <Card name = 'Ana' time = '10:57:47' />
+
+      <p>{count}</p>
+      <button onClick={() => {
+        setCount(count + 1)
+      }
+      }>Contar</button>
     </div>
   )
 }
