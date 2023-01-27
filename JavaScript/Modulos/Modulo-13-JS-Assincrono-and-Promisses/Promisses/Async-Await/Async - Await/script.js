@@ -26,10 +26,6 @@ async function start() {
   }
 }
 
-
-
-
-
 start();
 
 // Eu fazendo!
