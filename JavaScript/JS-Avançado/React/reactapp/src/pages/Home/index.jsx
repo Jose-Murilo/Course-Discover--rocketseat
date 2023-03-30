@@ -25,4 +25,4 @@ export function Home() {
       <Card name = 'Ana' time = '10:57:47' />
     </div>
   )
-}
+};
