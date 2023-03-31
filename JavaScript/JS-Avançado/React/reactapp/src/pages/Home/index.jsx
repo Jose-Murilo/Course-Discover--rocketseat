@@ -10,6 +10,11 @@ export function Home() {
   function handleAddStudents() {
     const newStudent = {
       name: studentName,
+      time: new Date().toLocaleTimeString('pt-BR', {
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit'
+      })
     }
 
     setStudents(prevState => [...prevState, newStudent])
@@ -31,7 +36,7 @@ export function Home() {
       <button onClick={handleAddStudents} type="button">Adicionar</button>
 
       {
-        students.map(student => <Card name={student.name} time='10:55:25' /> )
+        students.map(student => <Card name={student.name} time={student.time} /> )
       }
       
     </div>
