@@ -23,12 +23,16 @@ export function Home() {
   }
 
   useEffect(() => {
-    fetch('https://api.github.com/users/Jose-Murilo')
-      .then(response => response.json())
-      .then(data => setUsers({
+    async function fetchData() {
+      const response = await fetch('https://api.github.com/users/Jose-Murilo');
+      const data = await response.json();
+      setUsers({
         name: data.name,
         avatar: data.avatar_url
-      }))
+      })
+    }
+
+    fetchData();
   }, [])
 
   return (
