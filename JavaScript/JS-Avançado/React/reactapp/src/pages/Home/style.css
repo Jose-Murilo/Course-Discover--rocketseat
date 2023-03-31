@@ -4,8 +4,23 @@
     flex-direction: column;
 }
 
-.container h1 {
+.container header {
+    width: 50%;
     margin: 8.4rem 0 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container header img {
+    width: 60px;
+    height: 60px;
+}
+
+.container header div {
+    display: flex;
+    align-items: center;
+    gap: 7px;
 }
 
 .container input {

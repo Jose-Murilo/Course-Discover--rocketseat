@@ -23,7 +23,13 @@ export function Home() {
 
   return (
     <div className='container'>
-      <h1>Lista de presença</h1>
+      <header>
+        <h1>Lista de presença</h1>
+        <div>
+          <strong>Murilo</strong>
+          <img src="https://github.com/Jose-Murilo.png" alt="" />
+        </div>
+      </header>
 
       <input 
         type="text"
