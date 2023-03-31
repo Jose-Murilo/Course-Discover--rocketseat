@@ -4,7 +4,7 @@ import './style.css'
 import { Card } from '../../components/Card/index'
 
 export function Home() {
-  const [studentName, setStudentName] = useState();
+  const [studentName, setStudentName] = useState('');
   const [students, setStudents] = useState([]);
 
   function handleAddStudents() {
@@ -36,7 +36,7 @@ export function Home() {
       <button onClick={handleAddStudents} type="button">Adicionar</button>
 
       {
-        students.map(student => <Card name={student.name} time={student.time} /> )
+        students.map(student => <Card key={student.time} name={student.name} time={student.time} /> )
       }
       
     </div>
