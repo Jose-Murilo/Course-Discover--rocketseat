@@ -5,24 +5,35 @@ import { Card } from '../../components/Card/index'
 
 export function Home() {
   const [studentName, setStudentName] = useState();
+  const [students, setStudents] = useState([]);
+
+  function handleAddStudents() {
+    const newStudent = {
+      name: studentName,
+    }
+
+    setStudents(prevState => [...prevState, newStudent])
+    setStudentName("")
+  }
 
   return (
     <div className='container'>
       <h1>Lista de presença</h1>
-      <p>Nome:{studentName}</p>
 
       <input 
         type="text"
         placeholder="Digite o nome..."
+        value={studentName}
         onChange={e => setStudentName(e.target.value)}
        />
 
 
-      <button type="button">Adicionar</button>
+      <button onClick={handleAddStudents} type="button">Adicionar</button>
 
-      <Card name='Murilo' time='10:55:25' />
-      <Card name = 'José' time = '10:57:47' />
-      <Card name = 'Ana' time = '10:57:47' />
+      {
+        students.map(student => <Card name={student.name} time='10:55:25' /> )
+      }
+      
     </div>
   )
 };
